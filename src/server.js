@@ -17,7 +17,7 @@ server.get('/api/wakeup-heroku', (_, res) => {
 
 const timer = 25 * 60 * 1000; // 25 minutes
 setInterval(() => {
-  https.get('https://ntdat-json-server.herokuapp.com/api/wakeup-heroku');
+  https.get('https://ntdat-tour-of-heroes.herokuapp.com/api/wakeup-heroku');
 }, timer);
 
 // To handle POST, PUT and PATCH you need to use a body-parser
