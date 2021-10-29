@@ -1,0 +1,30 @@
+{
+  "name": "tour-of-heroes",
+  "version": "1.0.0",
+  "description": "tour-of-heroes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "generate-data": "node src/generate-data",
+    "fwrite": "prettier --config .prettierrc --write src",
+    "lint": "eslint -c .eslintrc --ext .js,.json src --fix"
+  },
+  "keywords": [
+    "tour-of-heroes"
+  ],
+  "author": "ntdat",
+  "license": "MIT",
+  "dependencies": {
+    "faker": "^5.5.3",
+    "json-server": "^0.17.0",
+    "query-string": "^7.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.14",
+    "prettier": "^2.4.1"
+  }
+}
